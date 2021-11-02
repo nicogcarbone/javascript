@@ -1,0 +1,45 @@
+
+body {
+    background-color:wheat ;
+}
+h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imagen-1 {
+
+    background-color: aquamarine;
+    width: 600px;
+    height: 300px;
+    margin-right:10px;
+    
+}
+
+.imagen-2 {
+    background-color:yellow ;
+    width: 600px;
+    height: 300px;
+}
+.imagen-grande {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.imagen-3 {
+    background-color: blue;
+    width: 1200px;
+    height: 600px;
+}
