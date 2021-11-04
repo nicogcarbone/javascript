@@ -27,7 +27,15 @@ for (let i = 0; i < 20; i++) {
     nombre != "0"
   ) {
     alert(i);
-  } else {
+  } 
+
+  
+  else {
     alert("no a ingresado su nombre");
   }
+
+   if (nombre !=="")  {
+    console.log ("hola" + " " + nombre + " " + "tu asiento es" + " " , i)
+  }
 }
+
