@@ -49,7 +49,7 @@ class equipos {
 
       while (this.equipo === "" || this.puntos === "") {
         console.log("NO INGRESO DATOS");break
-      if (this.equipo !== "" || this.puntos !== "") break;
+      
       }
     }
   }
