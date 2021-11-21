@@ -16,7 +16,53 @@ do {
   }
 } while (equipo.length != cantidad);
 
+
+
+let contenedor = document.createElement("div");
+contenedor.innerHTML= `<h1>TU TABLA DE POSICIONES</h1>
+                       <h3>Equipos:</h3> <h1>${equipo}</h1>
+                       <h3>Puntajes:</h3> <h1>${puntaje}</h1>`;   
+                       
+document.body.appendChild(contenedor);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 console.log(equipo, puntaje);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const inscripcion = [
   { nombreTorneo: "el bidon $ ", precio: 2800 },
