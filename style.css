@@ -1,23 +1,20 @@
 body {
   background-image: url(./multimedia/pexels-nmr-hrd-3571065.jpg);
 }
-.navbar{
-    background-color: rgb(67, 170, 67);
-}
-li,ul{
+
+li,
+ul {
   display: flex;
   justify-content: space-around;
-    font-size: large;
-    font-weight: 700;
-  
-  
+  font-size: large;
+  font-weight: 700;
 }
 
 h1,
 h2 {
   display: flex;
   justify-content: center;
-  color:white;
+
 }
 
 h3 {
@@ -25,28 +22,18 @@ h3 {
   justify-content: center;
 }
 
-
-.imagen-2 {
-  background-color: yellow;
-  width: 600px;
-  height: 300px;
-}
-.imagen-grande {
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-.imagen-3 {
-  background-color: blue;
-  width: 1200px;
-  height: 600px;
-}
 button {
-   text-align: center;
-    
-    
+  text-align: center;
 }
-tr {text-align: center;}
+tr {
+  text-align: center;
+}
 th {
- text-align: center;
+  text-align: center;
+}
+.titulo {
+background-color:lightgray;
+opacity: 0.75;
+padding-top: 50px;
+
 }
