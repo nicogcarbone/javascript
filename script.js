@@ -36,22 +36,30 @@ function Empate(id) {
 
 
 function renderTable() {
-  let contenedor = document.getElementById("tabla");
-
-  contenedor.innerHTML = "";
+  let contenedor = $("#tabla")
+  contenedor.html("")
+ 
 
   torneo.forEach((e) => {
-    const row = document.createElement("tr");
-    row.classList.add("table-light");
-    row.innerHTML = `
-      <td>${e.Equipo}</td>
-    <td><div class="btn-group btn-group-sm" role="group" aria-label=".btn-group-*"><b>${e.puntos}</b>
-    <td><button onclick="sumarPuntos(${e.id})">Gano</button>
-    <button onclick="Empate(${e.id})">Empato</button> 
-    <button>Perdio</button></td>
-    `;
+    contenedor.append( `
+    <tr></tr>
+    
+    <td>${e.Equipo}</td>
+  <td><b>${e.puntos}</b></td>
 
-    contenedor.appendChild(row);
+  <td><button onclick="sumarPuntos(${e.id})">Gano</button>
+  <button onclick="Empate(${e.id})">Empato</button> 
+  <button>Perdio</button></td>
+  
+  `)
+    
+
+ 
+    
+    
+ 
+
+    
   });
 }
 

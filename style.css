@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+
 body {
   background-image: url(./multimedia/pexels-nmr-hrd-3571065.jpg);
+  font-family: 'Manrope', sans-serif;
 }
 
 li,
@@ -8,7 +12,9 @@ ul {
   justify-content: space-around;
   font-size: large;
   font-weight: 700;
+  font-family: 'Manrope', sans-serif;
 }
+
 
 h1,
 h2 {
@@ -24,16 +30,21 @@ h3 {
 
 button {
   text-align: center;
+
 }
 tr {
   text-align: center;
+  font-family: 'Manrope', sans-serif;
 }
 th {
   text-align: center;
+  font-family: 'Manrope', sans-serif;
 }
 .titulo {
 background-color:lightgray;
 opacity: 0.75;
 padding-top: 50px;
+font-family: 'Manrope', sans-serif;
+
 
 }
