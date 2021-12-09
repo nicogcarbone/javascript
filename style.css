@@ -2,7 +2,7 @@
 
 
 body {
-  background-image: url(./multimedia/pexels-nmr-hrd-3571065.jpg);
+
   font-family: 'Manrope', sans-serif;
 }
 
@@ -40,11 +40,37 @@ th {
   text-align: center;
   font-family: 'Manrope', sans-serif;
 }
-.titulo {
-background-color:lightgray;
-opacity: 0.75;
-padding-top: 50px;
+
+.tabla {
+  background-image: url(./multimedia/pexels-nmr-hrd-3571065.jpg);
+}
+.titulo-tabla {
+background-color: whitesmoke;
 font-family: 'Manrope', sans-serif;
+}
+.titulo {
+  background-image:url(./multimedia/pexels-kelly-l-2935982.jpg);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+padding-top: 100px;
+padding-bottom: 900px;
 
+color: whitesmoke;
 
+}
+
+.equipos {
+
+  font-family: 'Manrope', sans-serif;
+}
+.imagenes {
+  display: flex;
+}
+
+.title {
+  padding-top: 100px;
+  font-weight: 700;
 }
