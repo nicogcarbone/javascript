@@ -17,49 +17,65 @@ let torneo = [
   { id: 16, Equipo: "Sabia", puntos: 0 },
   { id: 17, Equipo: "Los Chiringuitos", puntos: 0 },
   { id: 18, Equipo: "Flandria", puntos: 0 },
-  
 ];
 
-function sumarPuntos(id) {
-  const index = torneo.findIndex((equipo) => equipo.id === id);
-  torneo[index].puntos = torneo[index].puntos + 3;
-  torneo = torneo.sort((a, b) => b.puntos - a.puntos);
-  renderTable();
-}
-function Empate(id) {
+
+
+/*function Empate(id) {
   const index = torneo.findIndex((equipo) => equipo.id === id);
   torneo[index].puntos = torneo[index].puntos + 1;
+  if (torneo[index].puntos > 30) {
+    alert("FELICITACIONES SALISTE CAMPEON DEL TORNEO");
+    torneo.forEach((p)=>{p.puntos= 0})
+  }
   torneo = torneo.sort((a, b) => b.puntos - a.puntos);
   renderTable();
 }
-
-
-
+*/
 function renderTable() {
-  let contenedor = $("#tabla")
-  contenedor.html("")
- 
+  let contenedor = $("#tabla");
+  contenedor.html("");
 
   torneo.forEach((e) => {
-    contenedor.append( `
+    contenedor.append(`
     <tr></tr>
     
     <td>${e.Equipo}</td>
   <td><b>${e.puntos}</b></td>
 
-  <td><button onclick="sumarPuntos(${e.id})">Gano</button>
-  <button onclick="Empate(${e.id})">Empato</button> 
+  <td><button id="sumarPuntos${e.id}">Gano</button>
+  <button id="Empate${e.id}">Empato</button> 
   <button>Perdio</button></td>
   
   `)
-    
 
- 
-    
-    
- 
 
-    
+///////////boton sumaPunto///////////
+
+  $(`#sumarPuntos${e.id}`).on('click' , () =>  {
+    const index = torneo.findIndex((equipo) => equipo.id===e.id );
+    torneo[index].puntos = torneo[index].puntos + 3;
+    if (torneo[index].puntos > 30) {
+      alert("FELICITACIONES SALISTE CAMPEON DEL TORNEO");
+      torneo.forEach((p)=>{p.puntos= 0})
+      
+    }
+  
+    torneo = torneo.sort((a, b) => b.puntos - a.puntos);
+    renderTable();
+  })
+  //////////boton empate/////////////
+  $(`#Empate${e.id}`).on('click' , () => {
+    const index = torneo.findIndex((equipo) => equipo.id === e.id);
+  torneo[index].puntos = torneo[index].puntos + 1;
+  if (torneo[index].puntos > 30) {
+    alert("FELICITACIONES SALISTE CAMPEON DEL TORNEO");
+    torneo.forEach((p)=>{p.puntos= 0})
+  }
+  torneo = torneo.sort((a, b) => b.puntos - a.puntos);
+  renderTable();
+  })
+  ;
   });
 }
 
