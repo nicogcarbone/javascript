@@ -21,17 +21,7 @@ let torneo = [
 
 
 
-/*function Empate(id) {
-  const index = torneo.findIndex((equipo) => equipo.id === id);
-  torneo[index].puntos = torneo[index].puntos + 1;
-  if (torneo[index].puntos > 30) {
-    alert("FELICITACIONES SALISTE CAMPEON DEL TORNEO");
-    torneo.forEach((p)=>{p.puntos= 0})
-  }
-  torneo = torneo.sort((a, b) => b.puntos - a.puntos);
-  renderTable();
-}
-*/
+
 function renderTable() {
   let contenedor = $("#tabla");
   contenedor.html("");
@@ -81,83 +71,11 @@ function renderTable() {
 
 renderTable();
 
-/*
-for (const torneos of torneo) {
-let contenedor = document.createElement("div");
-contenedor.innerHTML = `
-                      <table class="table table-dark table-striped" >
-                      <tr class="table-light">
-              <th>Posicion: ${torneos.id}</th>
-                        <th>${torneos.Equipo}</th>
-                      <th><div class="btn-group btn-group-sm" role="group" aria-label=".btn-group-*"><b>${torneos.puntos}</b>
-                      <button id="gano">Gano</button>
-                      <button>Empato</button> 
-                      <button>Perdio</button></th>
-                      </div>
-                      </tr>
-                      
-                      </table> 
-                    
-                        `;
 
-document.body.appendChild(contenedor);
-}
 
-*/
+
 
 /*
-
-let puntaje = [3,6,9,12];
-puntaje.sort(function (a, b) {
-  return b - a;
-});
-
-let cantidad = 4;
-
-
-
-
-
-do {
-  let entrada = prompt("ingrese equipo");
-  equipo.push(entrada);
-
-  while (entrada === "") {
-    alert("NO INGRESO DATOS");
-    break;
-  }
-} while (equipo.length != cantidad);
-
-
-
-
-let contenedor = document.createElement("div");
-contenedor.innerHTML = `<h1>TU TABLA DE POSICIONES</h1>
-                       <h3>Equipos:_____________Puntajes:</h3>
-                       <h1>${equipo[0]}_______${puntaje [0]}pts</h1> 
-                       <h1>${equipo[1]}_______${puntaje[1]}pts</h1>
-                       <h1>${equipo[2]}_______${puntaje[2]}pts</h1>
-                       <h1>${equipo[3]}_______${puntaje[3]}pts</h1>                    
-                       
-                       `;
-
-document.body.appendChild(contenedor);
-
-
-let btnGano = document.getElementById("gano");
-
-btnGano.onclick =() =>  puntaje.push( 3);
-
-
-
-
-
-
-
-
-
-
-
 
 const inscripcion = [
   { nombreTorneo: "el bidon $ ", precio: 2800 },
