@@ -56,7 +56,7 @@ font-family: 'Manrope', sans-serif;
   background-attachment: fixed;
   
 padding-top: 100px;
-padding-bottom: 900px;
+padding-bottom: 800px;
 
 color: whitesmoke;
 
@@ -73,4 +73,5 @@ color: whitesmoke;
 .title {
   padding-top: 100px;
   font-weight: 700;
+  padding-bottom: 100px;
 }
