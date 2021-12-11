@@ -45,8 +45,16 @@ function renderTable() {
   $(`#sumarPuntos${e.id}`).on('click' , () =>  {
     const index = torneo.findIndex((equipo) => equipo.id===e.id );
     torneo[index].puntos = torneo[index].puntos + 3;
+  
     if (torneo[index].puntos > 30) {
-      alert("FELICITACIONES SALISTE CAMPEON DEL TORNEO");
+      $(".tabla").prepend(`<h1 id="campeon" style="display-none">¡¡¡FELICITACIONES CAMPEON!!!!</h1>`);
+      $("#campeon").css({"color":"white",
+                  "font-size":"100px",
+                  "text-shadow": "0 0 2px black",})
+      $("#campeon").fadeOut("slow",function(){
+        $("#campeon").fadeIn(1000);
+      });
+      
       torneo.forEach((p)=>{p.puntos= 0})
       
     }
