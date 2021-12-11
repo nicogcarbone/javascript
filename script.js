@@ -47,7 +47,7 @@ function renderTable() {
     torneo[index].puntos = torneo[index].puntos + 3;
   
     if (torneo[index].puntos > 30) {
-      $(".tabla").prepend(`<h1 id="campeon" style="display-none">¡¡¡FELICITACIONES CAMPEON!!!!</h1>`);
+      $(".tabla").prepend(`<h1 id="campeon" style="display-none">¡FELICITACIONES CAMPEON!</h1>`);
       $("#campeon").css({"color":"white",
                   "font-size":"100px",
                   "text-shadow": "0 0 2px black",})
