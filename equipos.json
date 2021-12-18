@@ -1,0 +1,20 @@
+ [
+    { "id": 1, "Equipo": "independiente", "puntos": 0,"PartidosJugados":0},
+    { "id": 2, "Equipo": "juventud deportiva", "puntos": 0,"PartidosJugados":0 },
+    { "id": 3, "Equipo": "Los estudiantes", "puntos": 0 ,"PartidosJugados":0},
+    { "id": 4, "Equipo": "San silencio", "puntos": 0 ,"PartidosJugados":0},
+    { "id": 5, "Equipo": "Los puchis", "puntos": 0,"PartidosJugados":0 },
+    { "id": 6, "Equipo": "La Cueva", "puntos": 0,"PartidosJugados":0 },
+    { "id": 7, "Equipo": "Parafuso", "puntos": 0,"PartidosJugados":0 },
+    { "id": 8, "Equipo": "Practicos Fc", "puntos": 0,"PartidosJugados":0 },
+    { "id": 9, "Equipo": "Tiro al blanco", "puntos": 0,"PartidosJugados":0 },
+    { "id": 10, "Equipo": "Pedros", "puntos": 0,"PartidosJugados":0 },
+    { "id": 11, "Equipo": "Iglu CF", "puntos": 0,"PartidosJugados":0 },
+    { "id": 12, "Equipo": "Los quilmes", "puntos": 0,"PartidosJugados":0 },
+    { "id": 13, "Equipo": "Libertad", "puntos": 0,"PartidosJugados":0 },
+    { "id": 14, "Equipo": "Denai", "puntos": 0,"PartidosJugados":0 },
+    { "id": 15, "Equipo": "La Cabrera", "puntos": 0,"PartidosJugados":0 },
+    { "id": 16, "Equipo": "Sabia", "puntos": 0,"PartidosJugados":0 },
+    { "id": 17, "Equipo": "Los Chiringuitos", "puntos": 0,"PartidosJugados":0 },
+    { "id": 18, "Equipo": "Flandria", "puntos": 0,"PartidosJugados":0 }
+  ]
