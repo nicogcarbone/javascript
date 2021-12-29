@@ -1,3 +1,5 @@
+
+
 const URL = "http://127.0.0.1:5500/equipos.json"
 
 $.get(URL, function(respuesta, estado)
@@ -23,6 +25,26 @@ function renderTable() {
   </td>
   
   `)
+
+///////input////////
+$("#myForm").submit(function (e) {
+    
+  e.preventDefault();
+  
+  let hijos = $(e.target).children();
+  
+   let equipoNuevo = hijos[0].value;
+   let nuevo = {"id": 19, "Equipo":equipoNuevo  , "puntos": 0,"PartidosJugados":0}
+   sessionStorage.setItem("equipoNuevo",equipoNuevo)
+   local = sessionStorage.getItem("equipoNuevo")
+   console.log(typeof local);
+   const find = torneo.findIndex((id) => id === id)
+   torneo[find].id = equipoNuevo; 
+ torneo.push(nuevo)
+  
+  renderTable();
+});
+
 
 
 ///////////boton sumaPunto///////////
@@ -86,28 +108,23 @@ function renderTable() {
   });
 
   ///////////// boton perdio /////
-$(`#Perdio${e.id}`).on("click" , ()=>{
 
 
-
-  const i = torneo.findIndex((equipo) => equipo.id===e.id );
-    torneo[i].PartidosJugados=torneo[i].PartidosJugados+ 1;
-  
-  
-    
-  torneo.forEach((j)=>{j.PartidosJugados=0});
-  })
+  ///////////
+   
 };
 
 
+renderTable()
 
 
 
 
-renderTable();
 
   
-} })
+} }
+)
+
 
 
 

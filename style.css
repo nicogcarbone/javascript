@@ -68,10 +68,29 @@ color: whitesmoke;
 }
 .imagenes {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .title {
   padding-top: 100px;
   font-weight: 700;
   padding-bottom: 100px;
+}
+.myForm {
+  text-align: center;
+  font-size:30px;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+}
+.contacto {
+background-image: url(./multimedia/pexels-nmr-hrd-3571065.jpg);
+padding-bottom: 50px;
+
+
+}
+
+.redes {
+display: flex;
+justify-content: space-around;
+padding-top: 20px;
 }
