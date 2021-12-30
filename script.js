@@ -115,7 +115,7 @@ $.get(URL, function (respuesta, estado) {
       };
         sessionStorage.setItem("equipoNuevo",equipoNuevo)
        local = sessionStorage.getItem("equipoNuevo")
-       alert('bienvenido',local);
+       alert('bienvenido local');
       
       torneo.push(nuevo);
 
